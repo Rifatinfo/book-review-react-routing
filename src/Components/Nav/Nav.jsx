@@ -1,10 +1,11 @@
+import { Link } from "react-router";
 
 
 const Nav = () => {
     const Links = <>
-          <li><a to="/">Home</a></li>
-          <li><a to="/">Listed Books</a></li>
-          <li><a to="/">Pages to Read</a></li>
+          <li><Link to="/"><a >Home</a></Link></li>
+          <li><Link to="/listed-book"><a>Listed Books</a></Link></li>
+          <li><Link to="/"><a >Pages to Read</a></Link></li>
     </>
        
     
@@ -33,7 +34,7 @@ const Nav = () => {
                              {Links}
                         </ul>
                     </div>
-                    <a to="/" className="btn btn-ghost text-xl">daisyUI</a>
+                   <Link> <a className="btn btn-ghost text-xl">daisyUI</a></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
